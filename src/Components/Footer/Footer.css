@@ -1,0 +1,29 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    width: 100%;
+    max-width: 300px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}

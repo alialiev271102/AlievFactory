@@ -1,0 +1,42 @@
+.news-ticker {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ticker-wrap {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.ticker {
+    display: flex;
+    animation: ticker 3s linear infinite;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 50px;
+    font-size: 1.2rem;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(-30%);
+    }
+    100% {
+        transform: translateX(3%);
+    }
+}
+
+@media (max-width: 768px) {
+    .ticker-item {
+        font-size: 1rem;
+        padding: 0 30px;
+    }
+}
