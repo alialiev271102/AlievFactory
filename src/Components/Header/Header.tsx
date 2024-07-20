@@ -20,10 +20,10 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="headContainer">
-                <div className="logo">Лого</div>
+                <div className="logo">Aliev Factory</div>
                 <nav className={`nav ${isMobile ? 'nav-mobile' : ''}`}>
-                    <a href="#" target='_blank' onClick={(e) => scrollToSection('services', e)} className="nav-link">Услуги</a>
                     <a href="#" target='_blank' onClick={(e) => scrollToSection('about', e)} className="nav-link">О нас</a>
+                    <a href="#" target='_blank' onClick={(e) => scrollToSection('services', e)} className="nav-link">Услуги</a>
                     <a href="#" target='_blank' onClick={(e) => scrollToSection('pricing', e)} className="nav-link">Прайс</a>
                     <a href="#" target='_blank' onClick={(e) => scrollToSection('contact', e)} className="nav-link">Контакты</a>
                 </nav>

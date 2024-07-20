@@ -17,6 +17,10 @@
     max-width: 300px;
 }
 
+.footer-column p {
+    margin-bottom: 10px;
+}
+
 .footer-social {
     margin-top: 20px;
 }
@@ -26,4 +30,13 @@
     margin-bottom: 10px;
     color: white;
     text-decoration: none;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
