@@ -11,19 +11,19 @@ function App() {
 
     const slideData = [
         {
-            image: '/images/serv1.jpg',
-            title: 'Конструирование',
-            text: 'Мы создаём точные и профессиональные лекала для вашего изделия, учитывая все ваши пожелания и спецификации',
+            image: 'https://via.placeholder.com/800x400.png?text=Slide+1',
+            title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
+            text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
         },
         {
             image: 'https://via.placeholder.com/800x400.png?text=Slide+2',
-            title: 'Услуга 2',
-            text: 'Описание услуги 2. Эта услуга включает в себя ...',
+            title: 'КОМПЛЕКСНЫЙ ПОДХОД',
+            text: 'Полный спектр услуг, обеспечивающий удобство и эффективность взаимодействия с заказчиками.',
         },
         {
             image: 'https://via.placeholder.com/800x400.png?text=Slide+3',
-            title: 'Услуга 3',
-            text: 'Описание услуги 3. Эта услуга включает в себя ...',
+            title: 'ГАРАНТИЯ КАЧЕСТВА',
+            text: 'Строгий контроль на каждом этапе производства и использование только высококачественных материалов.',
         },
     ];
 
@@ -79,8 +79,8 @@ function App() {
                 <VideoPlayer videoSrc="/vid.mp4"/>
                 <Services slides={slideData} products={productData}/>
                 <Footer
-                    phoneNumberWhatsapp="+996(708)-70-00-33"
-                    phoneNumberTelegram="+996(501)-33-99-66"
+                    phoneNumberWhatsapp="+996708700033"
+                    phoneNumberTelegram="+996558700033"
                     email="aliev.factory@gmail.com"
                     address="ул. Алма-Атинская 208"
                     city="г.Бишкек, Киргизия"
