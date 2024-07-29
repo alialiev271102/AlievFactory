@@ -33,16 +33,16 @@ const Services: React.FC<ServicesProps> = ({ slides, products }) => {
 
     return (
         <div className="services" id="services">
-            <div className="slider-section">
-                <AliceCarousel
-                    items={items}
-                    autoPlay
-                    autoPlayInterval={10000}
-                    infinite
-                    disableDotsControls={false}
-                    disableButtonsControls={true}
-                />
-            </div>
+            {/*<div className="slider-section">*/}
+            {/*    <AliceCarousel*/}
+            {/*        items={items}*/}
+            {/*        autoPlay*/}
+            {/*        autoPlayInterval={10000}*/}
+            {/*        infinite*/}
+            {/*        disableDotsControls={false}*/}
+            {/*        disableButtonsControls={true}*/}
+            {/*    />*/}
+            {/*</div>*/}
             <div className="products-section">
                 {products.map((product, index) => (
                     <div key={index} className="product-card">
