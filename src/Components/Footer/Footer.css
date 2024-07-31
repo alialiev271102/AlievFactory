@@ -21,6 +21,10 @@
     margin-bottom: 10px;
 }
 
+.footer-column strong {
+    font-weight: 400;
+}
+
 .footer-social {
     margin-top: 20px;
 }

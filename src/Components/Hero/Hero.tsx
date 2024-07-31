@@ -5,14 +5,18 @@ interface HeroProps {
     image: string;
     title: string;
     subtitle: string;
+    text: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ image, title, subtitle }) => {
+const Hero: React.FC<HeroProps> = ({ image, title, subtitle, text }) => {
     return (
         <div className="hero" style={{ backgroundImage: `url(${image})` }}>
             <div className="overlay">
-                <h1 className="hero-title">{title}</h1>
-                <p className="hero-subtitle">{subtitle}</p>
+                <div className="hero-info-block">
+                    <h1 className="hero-title">{title}</h1>
+                    <p className="hero-subtitle">{subtitle}</p>
+                </div>
+                <p className="hero-text">{text}</p>
             </div>
         </div>
     );
