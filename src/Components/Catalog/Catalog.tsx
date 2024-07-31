@@ -13,18 +13,21 @@ interface CatalogProps {
 
 const Catalog: React.FC<CatalogProps> = ({ items }) => {
     return (
-        <div className="catalog-container">
-            {items.map((item: ICart) => (
-                <div className="catalog-cart" key={item.text}>
-                    <div className="catalog-img-container">
-                        <img src={item.image} alt={item.text} />
+        <div>
+            <h2 className="catalog-title">Каталог наших товаров</h2>
+            <div className="catalog-container">
+                {items.map((item: ICart) => (
+                    <div className="catalog-cart" key={item.text}>
+                        <div className="catalog-img-container">
+                            <img src={item.image} alt={item.text}/>
+                        </div>
+                        <div className="catalog-info">
+                            <p className="catalog-info-text">{item.text}</p>
+                            <span className="catalog-info-price">{item.price} сом.</span>
+                        </div>
                     </div>
-                    <div className="catalog-info">
-                        <p className="catalog-info-text">{item.text}</p>
-                        <span className="catalog-info-price">{item.price} сом.</span>
-                    </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }

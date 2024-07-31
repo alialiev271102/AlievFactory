@@ -3,77 +3,74 @@ import Header from "./Components/Header/Header.tsx";
 import Hero from "./Components/Hero/Hero.tsx";
 import Footer from "./Components/Footer/Footer.tsx";
 import Catalog, {ICart} from "./Components/Catalog/Catalog.tsx";
+import Services from "./Components/Services/Services.tsx";
 
 function App() {
 
-    // const slideData = [
-    //     {
-    //         image: 'https://via.placeholder.com/800x400.png?text=Slide+1',
-    //         title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
-    //         text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
-    //     },
-    //     {
-    //         image: 'https://via.placeholder.com/800x400.png?text=Slide+2',
-    //         title: 'КОМПЛЕКСНЫЙ ПОДХОД',
-    //         text: 'Полный спектр услуг, обеспечивающий удобство и эффективность взаимодействия с заказчиками.',
-    //     },
-    //     {
-    //         image: 'https://via.placeholder.com/800x400.png?text=Slide+3',
-    //         title: 'ГАРАНТИЯ КАЧЕСТВА',
-    //         text: 'Строгий контроль на каждом этапе производства и использование только высококачественных материалов.',
-    //     },
-    // ];
-    //
-    // const productData = [
-    //     {
-    //         image: '/images/serv1.jpg',
-    //         title: 'КОНСТРУИРОВАНИЕ',
-    //         description: 'Мы создаём точные и профессиональные лекала для вашего изделия, учитывая все ваши пожелания и спецификации.',
-    //     },
-    //     {
-    //         image: '/images/serv2.jpg',
-    //         title: 'ПОШИВ ОБРАЗЦА',
-    //         description: 'Изготовление первого образца изделия для проверки конструкции, материалов и общего вида.',
-    //     },
-    //     {
-    //         image: '/images/serv3.jpg',
-    //         title: 'ДОРАБОТКА ПОСАДКИ',
-    //         description: 'Коррекция и улучшение посадки изделия на основе результатов примерки и ваших замечаний.',
-    //     },
-    //     {
-    //         image: '/images/serv4.jpg',
-    //         title: 'ПОШИВ ПАРТИИ',
-    //         description: 'Массовое производство партий одежды с учетом всех технологических требований и стандартов качества.',
-    //     },
-    //     {
-    //         image: '/images/serv5.jpg',
-    //         title: 'КОНТРОЛЬ КАЧЕСТВА',
-    //         description: 'Строгий контроль качества на каждом этапе производства, от выбора материалов до окончательной упаковки.',
-    //     },
-    //     {
-    //         image: '/images/serv6.jpeg',
-    //         title: 'ОТГРУЗКА',
-    //         description: 'Организация логистики и своевременная отгрузка готовой продукции по указанному вами адресу.',
-    //     },
-    // ];
-
+    const slideData = [
+        {
+            image: 'images/slider-cart-img-1.png',
+            title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
+            text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
+        },
+        {
+            image: 'images/slider-cart-img-2.jpg',
+            title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
+            text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
+        },
+        {
+            image: 'images/slider-cart-img-3.jpg',
+            title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
+            text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
+        },
+        {
+            image: 'images/slider-cart-img-4.jpg',
+            title: 'ВЫСОКАЯ ТОЧНОСТЬ И КАЧЕСТВО',
+            text: 'Использование современных технологий и опытных специалистов гарантирует высокое качество и точность всех изделий.',
+        },
+    ];
 
     const catalogItems: ICart[] = [
         {
-            image: "images/catalog-cart-img-1.png",
+            image: "images/catalog-img-1.png",
             text: "Стильная куртка",
             price: 150,
         },
         {
-            image: "https://example.com/image2.jpg",
+            image: "images/catalog-img-2.png",
             text: "Модные брюки",
             price: 75,
         },
         {
-            image: "https://example.com/image3.jpg",
+            image: "images/catalog-img-3.png",
             text: "Удобные кроссовки",
             price: 120,
         },
+        {
+            image: "images/catalog-img-4.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },{
+            image: "images/slider-cart-img-1.png",
+            text: "Стильная куртка",
+            price: 150,
+        },
+        {
+            image: "images/slider-cart-img-1.png",
+            text: "Модные брюки",
+            price: 75,
+        },
+        {
+            image: "images/slider-cart-img-1.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
+        {
+            image: "images/slider-cart-img-1.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
+
     ];
 
     return (
@@ -85,6 +82,7 @@ function App() {
                 <Hero title="ALIEV FACTORY" subtitle="Швейное производство "
                       text="Ваш Надежный Партнер: Качество, Которому Можно Доверять"
                       image="https://upload.wikimedia.org/wikipedia/commons/f/fd/Sewing_factory_in_Buryatia.jpg"/>
+                <Services slides={slideData}/>
                 <Catalog items={catalogItems}/>
                 {/*<NewsTicker headlines={['Полный Цикл', 'Качество и Сроки', 'Большие объёмы']}/>*/}
                 {/*<AboutUs title="О Нас "*/}
@@ -94,7 +92,6 @@ function App() {
                 {/*                рубашки, брюки, спортивные костюмы и тд."*/}
                 {/*         image="/images/AboutUs.png"/>*/}
                 {/*<VideoPlayer videoSrc="/vid.mp4"/>*/}
-                {/*<Services slides={slideData} products={productData}/>*/}
                 <Footer
                     phoneNumberWhatsapp="+996708700033"
                     phoneNumberTelegram="+996558700033"
