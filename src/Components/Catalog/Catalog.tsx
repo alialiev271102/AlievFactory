@@ -1,7 +1,7 @@
 import React from "react";
 import "./Catalog.css";
 
-interface ICart {
+export interface ICart {
     image: string,
     text: string,
     price: number,
@@ -21,7 +21,7 @@ const Catalog: React.FC<CatalogProps> = ({ items }) => {
                     </div>
                     <div className="catalog-info">
                         <p className="catalog-info-text">{item.text}</p>
-                        <span className="catalog-info-price">{item.price} руб.</span>
+                        <span className="catalog-info-price">{item.price} сом.</span>
                     </div>
                 </div>
             ))}
