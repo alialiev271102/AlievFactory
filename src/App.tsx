@@ -55,6 +55,30 @@ function App() {
             text: "Удобные кроссовки",
             price: 120,
         },
+        {
+            image: "images/catalog-img-5.png",
+            hoverImage: "images/catalog-hover-img-5.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
+        {
+            image: "images/catalog-img-6.png",
+            hoverImage: "images/catalog-hover-img-6.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
+        {
+            image: "images/catalog-img-7.png",
+            hoverImage: "images/catalog-hover-img-7.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
+        {
+            image: "images/catalog-img-8.png",
+            hoverImage: "images/catalog-hover-img-8.png",
+            text: "Удобные кроссовки",
+            price: 120,
+        },
     ];
 
     return (
