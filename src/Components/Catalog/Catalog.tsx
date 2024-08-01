@@ -3,6 +3,7 @@ import "./Catalog.css";
 
 export interface ICart {
     image: string,
+    hoverImage: string, // добавляем свойство для изображения при наведении
     text: string,
     price: number,
 }
@@ -19,7 +20,8 @@ const Catalog: React.FC<CatalogProps> = ({ items }) => {
                 {items.map((item: ICart) => (
                     <div className="catalog-cart" key={item.text}>
                         <div className="catalog-img-container">
-                            <img src={item.image} alt={item.text}/>
+                            <img src={item.image} alt={item.text} className="catalog-img"/>
+                            <img src={item.hoverImage} alt={item.text} className="hover-img"/>
                         </div>
                         <div className="catalog-info">
                             <p className="catalog-info-text">{item.text}</p>

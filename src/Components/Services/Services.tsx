@@ -16,6 +16,10 @@ interface ServicesProps {
 const Services: React.FC<ServicesProps> = ({ slides }) => {
     const items = slides.map((slide, index) => (
         <div key={index} className="slide">
+            <div
+                className="blur-background"
+                style={{ backgroundImage: `url(${slide.image})` }}
+            />
             <img src={slide.image} alt={slide.title} className="slide-image" />
         </div>
     ));

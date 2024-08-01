@@ -33,44 +33,28 @@ function App() {
     const catalogItems: ICart[] = [
         {
             image: "images/catalog-img-1.png",
+            hoverImage: "images/catalog-hover-img-1.png",
             text: "Стильная куртка",
             price: 150,
         },
         {
             image: "images/catalog-img-2.png",
+            hoverImage: "images/catalog-hover-img-2.png",
             text: "Модные брюки",
             price: 75,
         },
         {
             image: "images/catalog-img-3.png",
+            hoverImage: "images/catalog-hover-img-3.png",
             text: "Удобные кроссовки",
             price: 120,
         },
         {
             image: "images/catalog-img-4.png",
-            text: "Удобные кроссовки",
-            price: 120,
-        },{
-            image: "images/slider-cart-img-1.png",
-            text: "Стильная куртка",
-            price: 150,
-        },
-        {
-            image: "images/slider-cart-img-1.png",
-            text: "Модные брюки",
-            price: 75,
-        },
-        {
-            image: "images/slider-cart-img-1.png",
+            hoverImage: "images/catalog-hover-img-4.png",
             text: "Удобные кроссовки",
             price: 120,
         },
-        {
-            image: "images/slider-cart-img-1.png",
-            text: "Удобные кроссовки",
-            price: 120,
-        },
-
     ];
 
     return (
