@@ -25,22 +25,42 @@
     font-weight: 400;
 }
 
-.footer-social {
-    margin-top: 20px;
-}
-
-.social-link {
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-    text-decoration: none;
-}
-
 .footer a {
-    color: #007bff;
+    color: white;
     text-decoration: none;
 }
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 32px; /* Увеличиваем размер иконок */
+    transition: color 0.3s;
+}
+
+.whatsapp {
+    color: #25D366; /* Фирменный цвет WhatsApp */
+}
+
+.whatsapp:hover {
+    color: #128C7E; /* Более тёмный оттенок при наведении */
+}
+
+.telegram {
+    color: #0088cc; /* Фирменный цвет Telegram */
+}
+
+.telegram:hover {
+    color: #006699; /* Более тёмный оттенок при наведении */
+}
+
+.email {
+    color: #ea4335; /* Красный цвет для email */
+}
+
+.email:hover {
+    color: #c5221f; /* Более тёмный оттенок при наведении */
 }

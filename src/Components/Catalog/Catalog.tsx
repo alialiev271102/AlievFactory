@@ -25,7 +25,6 @@ const Catalog: React.FC<CatalogProps> = ({ items }) => {
                         </div>
                         <div className="catalog-info">
                             <p className="catalog-info-text">{item.text}</p>
-                            <span className="catalog-info-price">{item.price} сом.</span>
                         </div>
                     </div>
                 ))}
