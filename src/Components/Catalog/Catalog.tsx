@@ -15,7 +15,7 @@ interface CatalogProps {
 const Catalog: React.FC<CatalogProps> = ({ items }) => {
     return (
         <div>
-            <h2 className="catalog-title">Каталог наших товаров</h2>
+            <h2 className="catalog-title">Каталог</h2>
             <div className="catalog-container">
                 {items.map((item: ICart, index) => (
                     <div className="catalog-cart" key={index}>

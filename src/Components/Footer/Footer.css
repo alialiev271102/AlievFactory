@@ -88,3 +88,9 @@
 .maps-button:hover {
     background-color: #357AE8; /* Более тёмный оттенок при наведении */
 }
+
+@media (max-width: 768px) {
+    .footer-column {
+        flex-direction: column;
+    }
+}
