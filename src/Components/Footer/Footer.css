@@ -12,9 +12,10 @@
 }
 
 .footer-column {
-    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    max-width: 300px;
 }
 
 .footer-column p {
@@ -26,7 +27,6 @@
 }
 
 .footer a {
-    color: white;
     text-decoration: none;
 }
 
@@ -34,33 +34,57 @@
     text-decoration: underline;
 }
 
-.social-link {
-    display: inline-block;
+.contact-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-button .icon {
     margin-right: 10px;
-    font-size: 32px; /* Увеличиваем размер иконок */
-    transition: color 0.3s;
+    font-size: 24px;
 }
 
-.whatsapp {
-    color: #25D366; /* Фирменный цвет WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
 }
 
-.whatsapp:hover {
-    color: #128C7E; /* Более тёмный оттенок при наведении */
+.whatsapp-button:hover {
+    background-color: #128C7E;
 }
 
-.telegram {
-    color: #0088cc; /* Фирменный цвет Telegram */
+.telegram-button {
+    background-color: #0088cc;
+    color: white;
 }
 
-.telegram:hover {
-    color: #006699; /* Более тёмный оттенок при наведении */
+.telegram-button:hover {
+    background-color: #006699;
 }
 
-.email {
-    color: #ea4335; /* Красный цвет для email */
+.gmail-button {
+    background-color: #ea4335;
+    color: white;
 }
 
-.email:hover {
-    color: #c5221f; /* Более тёмный оттенок при наведении */
+.gmail-button:hover {
+    background-color: #c5221f;
+}
+
+.maps-button {
+    background-color: #4285F4; /* Фирменный цвет Google Maps */
+    color: white;
+}
+
+.maps-button:hover {
+    background-color: #357AE8; /* Более тёмный оттенок при наведении */
 }

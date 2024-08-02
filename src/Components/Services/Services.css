@@ -1,67 +1,58 @@
 .services {
-    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .services-title {
+    font-size: 2.5rem;
+
+}
+
+.service-cart {
+    max-width: 400px;
     margin: 20px;
-}
-
-.slider-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
-.slide {
-    position: relative;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 15px;
+    justify-content: space-around;
+    transition: transform 0.2s;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Устанавливаем позицию relative для псевдоэлемента */
 }
 
-.slide-image {
-    max-width: 100%;
-    max-height: 600px;
-    z-index: 2;
-    border-radius: 5px;
+.service-cart:hover {
+    transform: scale(1.05);
 }
 
-.blur-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center;
-    filter: blur(20px);
-    z-index: 1;
-    opacity: 0.5;
-    border-radius: 15px;
+.service-title {
+    margin: 0; /* Убираем отступы, чтобы полоска была близко к заголовку */
+    position: relative; /* Устанавливаем позицию relative для псевдоэлемента */
+}
+
+.service-title::after {
+    content: "";
+    display: block;
+    height: 2px; /* Высота полоски */
+    width: 50%; /* Ширина полоски */
+    background-color: #000; /* Цвет полоски */
+    margin: 10px auto; /* Отступы сверху и снизу для полоски */
+}
+
+
+@media (max-width: 1200px) {
+    .service-cart {
+        flex: 1 1 45%; /* Ширина карточки при ширине экрана меньше 1200px */
+    }
 }
 
 @media (max-width: 768px) {
-    .slide-title {
-        font-size: 20px;
-    }
-
-    .slide-text {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .slide-title {
-        font-size: 18px;
-    }
-
-    .slide-text {
-        font-size: 12px;
+    .service-cart {
+        flex: 1 1 100%; /* Ширина карточки при ширине экрана меньше 768px */
     }
 }
