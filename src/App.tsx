@@ -61,13 +61,13 @@ function App() {
         {
             image: "images/catalog-img-1.png",
             hoverImage: "images/catalog-hover-img-1.png",
-            text: "Укороченная Стёганая Куртка",
+            text: "Удлинённая Стёганая Куртка",
             price: 150,
         },
         {
             image: "images/catalog-img-2.png",
             hoverImage: "images/catalog-hover-img-2.png",
-            text: "Удлинённая Стёганая Куртка",
+            text: "Укороченная Стёганая Куртка",
             price: 75,
         },
         {
